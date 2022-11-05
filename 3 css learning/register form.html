@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Student Register </title>
+
+    <link rel="stylesheet" href="registerform.css">
+
+</head>
+<body id="body">
+
+    <h1 id="header"> Student Register </h1>
+
+    <form action="">
+
+        <label for="name">Name</label>
+        <input type="text" placeholder="Mg / Ma" id="name"> 
+        <br><br>
+
+        <label for="email">Email</label>
+        <input type="email" placeholder="example@gmail.com" id="email"> 
+        <br><br>
+
+        <label for="phone">Phone</label>
+        <input type="number" id="phone" placeholder="09********"> 
+        <br><br>
+
+        <label for="dob">Date Of Birth</label>
+        <input type="date" id="dob"> 
+        <br><br>
+
+        <label for="">Gender</label><br>
+            <input type="radio" id="male" name="gender">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender">
+            <label for="female">Female</label><br><br>
+
+        <label for="address">Address</label>
+        <textarea name="" id="address"></textarea> 
+        <br><br>
+
+        <label for="">Qualification</label> <br><br>
+        <div>
+            <input type="checkbox" id="highschool">
+            <label for="highschool">HighSchool (10 th)</label>
+        </div>
+        <div>
+            <input type="checkbox" id="higherschool" disabled>
+            <label for="higherschool">HigherSchool (12 th)</label>
+        </div>
+        <div>
+            <input type="checkbox" id="graduate">
+            <label for="graduate">Gradute </label>
+        </div>
+        <div>
+            <input type="checkbox" id="master">
+            <label for="master">Master</label>
+        </div>
+        <div>
+            <input type="checkbox" id="phd">
+            <label for="phd">PHD</label>
+        </div> <br>
+
+        <fieldset>
+            <legend>Rules</legend>
+            <ul>
+                <li>This is First Rule!</li>
+                <li>This is Second Rule!</li>
+                <li>This is Third Rule!</li>
+                <li>This is Fourth Rule!</li>
+                <li>This is Fifth Rule!</li>
+                <li>This is Sixth Rule!</li>
+                <li>This is Seventh Rule!</li>
+            </ul>
+        </fieldset> <br>
+
+        <div class="btn">
+            <button type="submit">Register</button>
+        </div>
+
+        <p></p>
+        <p class="thank">Thank You</p>
+
+    </form>
+   
+</body>
+</html>

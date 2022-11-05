@@ -1,0 +1,83 @@
+h1 {
+    text-align: center;
+}
+
+#body {
+    background-color: skyblue;
+}
+
+form {
+    width: 60%;
+    margin: auto;
+}
+
+input[type="text"], input[type="email"], 
+input[type="number"], input[type="date"] {
+    width: 100%;
+    height: 40px;
+    outline: none;
+} 
+
+input[type="text"]:focus ,input[type="email"]:focus, 
+input[type="number"]:focus, input[type="date"]:focus {
+    border: 4px solid gray; 
+}
+
+input[type="radio"]:checked + label {
+    color: red;
+}
+
+input[type="checkbox"]:enabled + label {
+    color: black;
+    font-style: italic;
+}
+
+input[type="checkbox"]:checked + label {
+    color: red;
+    font-style: normal;
+}
+
+input[type="checkbox"]:disabled + label {
+    color: gray;
+}
+
+#address {
+    width: 100%;
+    height: 100px;
+    outline: none;
+}
+
+li:first-child {
+    background-color: greenyellow;
+}
+li:last-child {
+    background-color: yellow;
+}
+li:nth-child(4) {
+    background-color: aqua;
+}
+
+/* p:empty {
+    height: 20px;
+    background-color: darkgrey;
+} */
+
+.thank {
+    text-align: center;
+}
+
+.btn {
+    text-align: center;
+}
+
+.btn button {
+    width: 100px;
+    height: 40px;
+}
+
+.btn button:hover {
+    background-color: rgba(150, 39, 39, 0.863);
+    color: white;
+}
+
+

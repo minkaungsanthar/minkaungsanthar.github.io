@@ -1,0 +1,135 @@
+h1 {
+    color: red;
+    text-align: center;
+    font-size: 23px;
+}
+
+/* universal selector */
+* {
+    /* color: greenyellow; */
+    font-size: 18px;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Tag Selectors  / Element Selectors */
+h3 {
+    color: blue;
+    text-align: right;
+}
+
+/* Attribute Selectors */
+a[title="google"] {
+    color: rgb(82, 82, 13);
+    text-decoration: line-through;
+}
+
+/* id Selector */
+#idSelector {
+    text-indent: 50px;
+    font-size: 20px;
+    word-spacing: 10px;
+    letter-spacing: 3px;
+    line-height: 30px;
+}
+
+/* class Selector */
+.class-selector {
+    color: gray;
+    font-size: 20px;
+}
+
+/* descendent Selector */
+#desc a {
+    color: blue;
+}
+
+/* child Selector */
+#child > a {
+    color: rgb(3, 114, 114);
+}
+
+/* pseudo */
+.pseudo:link {
+    text-decoration: none;
+}
+
+/* hover */
+.pseudo:hover {
+    /* text-decoration: underline; */
+    letter-spacing: 5px;
+    color: red;
+}
+
+/* active */
+.pseudo:active {
+    background-color: red;
+}
+
+/* visited */
+.pseudo:visited {
+    color: brown;
+}
+
+/* target */
+:target {
+    border: 1px solid ;
+    color: red;
+}
+
+/* Margin */
+.margin1 {
+    margin: 100px 50px;
+    border: 1px solid red;
+}
+
+.margin2 {
+    margin-top: 20px;
+    border: 1px solid black;
+}
+
+.padding {
+    padding: 50px;
+    border: 2px solid yellow;
+}
+
+/* lay our */
+.inline {
+    border: 1px solid red;
+    width: 400px;
+    display: inline-block;
+}
+
+.block {
+    border: 1px solid;
+    width: 400px;
+    display: inline-block;
+}
+
+/* float */
+.floar_left img {
+    /* width: 40%; */
+    float: left;
+}
+
+/* grid */
+.gridone div, .gridtwo div {
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.gridone, .gridtwo {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.gridtwo {
+    grid-column-gap: 30px;
+    grid-row-gap: 50px;
+}
+
+fixed {
+    positon text-combine-upright: top: 100px
+    right 100px;;
+}
