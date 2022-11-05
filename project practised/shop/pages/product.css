@@ -1,0 +1,174 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: azure;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 1200px;
+    height: 680px;
+    background-size: 40% 100%;
+
+}
+
+.nav { 
+    background-color: grey;
+    height: 70px;
+}
+
+.IPC {
+    color: rgb(202, 130, 130);
+    font-size: 50px;
+    padding: 0% 60px;  
+    position: relative;  
+}
+
+.HCA {
+    height: 50px;
+    float: right;
+    margin-right: 30px;
+    margin-top: 5px;
+    word-spacing: 17px;
+    letter-spacing: 3px;
+
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 10px;
+} 
+  
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    padding: 5px 5px;
+    border-radius: 7px;
+    text-transform: uppercase;
+}
+
+a.A,a:hover {
+    background: rgb(144, 172, 173);
+    transition: 0.3s;
+}
+
+.specialSelling {
+    width: 25%;
+    margin-top: 40px;
+    margin-left: 5%;
+    font-size: 22px;
+}
+
+.CCF {
+    /*width: 60%;*/
+    height: 700px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.cffPhoto {
+    width: 150px;
+    height: 150px;
+}
+
+.PPSI {
+   /* width: 60%; */
+    height: 700px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+
+.alignitem {
+    display: flex;
+}
+
+.ppsi11 {
+    width: 150px;
+    height: 150px;
+}
+
+.ppsi21 {
+    width: 180px;
+    height: 150px;
+}
+
+.SKT { 
+    width: 60%;
+    height: 1000px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.SKTphoto {
+    width: 150px;
+    height: 150px;
+}
+
+.sktNewproduct {
+    color: rgb(214, 188, 40);
+    width: 30%;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+    text-decoration: underline brown 3px;
+}
+
+.FF {
+    width: 80%;
+    height: 960px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.ff {
+    width: 30%;
+    padding-bottom: 20px;
+    color: rgb(139, 139, 204);
+}
+
+.ffphoto {
+    width: 180px;
+    height: 180px;
+}
+
+.divv {
+    width: 30%;
+}
+
+.del {
+    text-decoration-line: line-through;
+}
+
+
+
+.ML {
+    border-left: 1px solid rgb(202, 202, 202);
+    height: 500px; 
+    margin-left: 5px;   
+    padding-right: 5px;
+}
+
+.productTitle {
+    width: 30%;
+    padding-bottom: 25px;
+    font-size: 22px;
+}
+
+.divimg {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+
