@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>  JS Operators Example </title>
+
+</head>
+<body>
+
+    <h1> JS Operators Example </h1>
+
+    <script>
+
+       // 1. input
+                    // three subjects >> subject 1 , subject 2 , subject 3        
+       // 2. process 
+                    // total >>     subject 1 + subject 2 + subject 3
+                    // average >>   total / 3   
+       // 3. output 
+                    // total , average
+            
+
+        // input
+        let subject1 = parseInt (prompt ("Enter Subject1 Marks"))
+        let subject2 = parseInt (prompt ("Enter Subject2 Marks"))
+        let subject3 = parseInt (prompt ("Enter Subject3 Marks"))
+
+        // processing
+        let total = subject1 + subject2 + subject3
+        let average = total / 3
+
+        // output
+            console.log("Subject 1 :" , subject1);
+            console.log("Subject 2 :" , subject2);
+            console.log("Subject 3 :" , subject3);
+
+            console.log("Total :" , total);
+            console.log("Average :" , average.toFixed(2));
+
+
+
+    </script>
+    
+</body>
+</html>

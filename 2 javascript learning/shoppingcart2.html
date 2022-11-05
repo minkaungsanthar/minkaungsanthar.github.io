@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Shopping Cart 2 </title>
+
+</head>
+<body>
+
+    <h1> Shopping Cart 2 </h1>
+
+    Item Name :     <input type="text" id="itemName">       <br>
+    Unit Price :    <input type="number" id="unitPrice">    <br>
+    Quantity :      <input type="number" id="quantity">     <br><br>
+
+    <button onclick="calculate()"> Add to Cart </button>    <br><br>
+
+    <h3> Your Cart </h3>
+
+    <table border="1px" cellpadding="10px">
+        <thead>
+            <tr>
+                <th> No. </th>  
+                <th> Name </th> 
+                <th> Unit Price </th> 
+                <th> Quantity </th> 
+                <th> Subtotal </th>
+            </tr>
+        </thead>
+
+        <tbody id="mydata">
+
+        </tbody>
+    </table>
+
+    <script>
+
+        var html = '' ;
+        var total = 0 ;
+        var i = 1 ;
+
+        function calculate(){
+            let itemName =            document.getElementById("itemName").value;
+            let unitPrice = parseInt (document.getElementById("unitPrice").value);
+            let quantity =  parseInt (document.getElementById("quantity").value);
+                //console.log(itemName , unitPrice , quantity);
+
+            let subtotal = unitPrice * quantity ; 
+                total = total + subtotal ; 
+                html = html + `
+                    <tr> 
+                        <td>${i++}</td> 
+                        <td>${itemName}</td> 
+                        <td>${unitPrice}</td> 
+                        <td>${quantity}</td> 
+                        <td>${subtotal}</td>
+                    </tr>
+                `;
+
+            document.getElementById("mydata").innerHTML=html;
+
+            document.getElementById("itemName").value = '' ;
+            document.getElementById("unitPrice").value = '' ;
+            document.getElementById("quantity").value = '' ;
+
+            document.getElementById("mydata").innerHTML += `
+                    <tr>
+                        <td colspan="4">Total</td> <td>${total}</td>
+                    </tr>
+            `;
+
+            if (total >= 10000 ) {
+
+                let discount = total * 0.1 ;
+                let grandTotal = total - discount ;
+
+            document.getElementById("mydata").innerHTML += `
+                    <tr>
+                        <td colspan="4">Discount</td> <td>${discount}</td>
+                    </tr>
+            `;
+
+            document.getElementById("mydata").innerHTML += `
+                    <tr>
+                        <td colspan="4">Grand Total</td> <td>${grandTotal}</td>
+                    </tr>
+            `;
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

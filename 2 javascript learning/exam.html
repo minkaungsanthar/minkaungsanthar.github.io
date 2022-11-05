@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Exam Result </title>
+
+</head>
+<body>
+
+    <h1> Exam Result </h1>
+
+    Myanmar : <input type="number" id="myanmar">      <br>
+    English : <input type="number" id="english">      <br>
+    Math : <input type="number" id="math">            <br>
+    Physics : <input type="number" id="physics">      <br>
+    Chemistry : <input type="number" id="chemistry">  <br>
+    Eco / Bio : <input type="number" id="eco">
+
+    <button onclick="calculate()"> Calculate </button>  <br><br>
+
+    Total : <p id="total"> </p>
+    Result : <p id="result"> </p>
+
+    <script>
+
+        function calculate() {
+            let myanmar = parseInt ( document.getElementById ("myanmar").value) ;
+            let english = parseInt ( document.getElementById ("english").value) ;
+            let math = parseInt ( document.getElementById ("math").value) ;
+            let physics = parseInt ( document.getElementById ("physics").value) ;
+            let chemistry = parseInt ( document.getElementById ("chemistry").value) ;
+            let eco = parseInt ( document.getElementById ("eco").value) ;
+
+
+            let total = myanmar + english + math + physics + chemistry + eco ;
+
+            document.getElementById ("total").innerHTML = total ;
+
+            if (myanmar >= 40 && english >= 40 && math >= 40 && physics >= 40 && chemistry >= 40 && eco >= 40) {
+
+                var result = " Passed " ;
+
+                if (myanmar >= 80 || english >= 80 || math >=80 || physics >= 80 || chemistry >= 80 || eco >= 80) {
+                    
+                    var result = " You passed with flying colour "
+                }
+
+            } else {
+
+                var result = " Failed "
+            }
+
+        document.getElementById ("result").innerHTML = result ;
+
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Js Loop </title>
+</head>
+<body>
+
+    <h1> Js Loop </h1>
+
+    <script>
+
+/*      for (var i=1 ; i<=10 ; i++) 
+        document.write(i+ " . hello world <br>") ;
+
+        for (var j=9 ; j>=1 ; j--)
+        document.write(j+ " . hello world <br>") ;
+*/
+/*
+        let a=10 ;
+        let b=20 ;
+
+        let c= a++ + 10 ; // a=10 c=20 
+        let d= a + ++b ; // a=11 b=21 d=32
+        let e= a++ + --b ; // a=11 b=20 e=31
+
+            console.log(c);
+            console.log(d);
+            console.log(e);
+*/
+/*
+
+        for (var i=1 ; i<=12 ; i++ ) { // outer loop (ဘယ်နှတန်း ထွက်မလဲ)
+            for (var j=1 ; j<=5 ; j++) { // inner loop (ဘယ်နှလုံး ထွက်မလဲ)
+
+                document.write(' * ')
+            }
+            document.write('<br>')
+        }
+*/
+/*
+        let ans = parseInt (prompt ("Enter a number"))
+
+        for (var i=1 ; i<=12 ; i++) {
+            let result = ans * i ;
+
+            document.write(ans+ ' x '+i+' = '+result+' <br> ')
+        }
+*/
+
+        let product = parseInt (prompt ("How many multiplication series you want to know ? ")) ;
+       
+        for (var j=product ; j>=1 ; j--) {
+            result = j * i ;
+
+            for (var i=1 ; i<=10 ; i++) { 
+                let result = product * i ;
+
+                document.write (product+ 'x' +i+ '=' +result+ '<br>')
+            }
+            document.write ('<br>')
+            document.write (j+ 'x' +i+ '=' +result+ '<br>')
+        }
+
+         
+
+
+        
+           
+        
+
+        
+    </script>
+
+   
+
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> JS DOM </title>
+
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1 id="myh1"> JS DOM </h1>
+
+    <p id="myp"> getElementById </p>
+    <p class="red"> getElementsByTagName </p>
+    <p class="red"> getElementsByClassName </p>
+    <p class="red"> getElementByName </p>
+
+    <button onclick="show()"> Click </button>
+
+    <script>
+        function show() {
+
+            let myh1= document.getElementById('myh1') 
+                console.log(myh1.innerHTML)
+            myh1.innerHTML = 'My <i> Updated HTML </i> Text';
+
+            let myp = document.getElementById('myp')
+                console.log(myp.innerHTML)
+            myp.innerText = '<i> My Updated </i> P Text for myp';
+
+            let myreds = document.getElementsByClassName('red') ;
+                console.log(myreds[0].innerHTML)
+            myreds[0].innerHTML = 'My red class 1: ';
+            myreds[1].innerHTML = 'My red class 2: ';
+            myreds[2].innerHTML = 'My red class 3: ';
+
+            let myptags = document.getElementsByTagName('p')
+                console.log(myptags);
+            myptags[0].innerHTML = 'Updated My p Tags By Tag Name: ';
+
+            let myh2 = document.querySelector('#myh1')
+                console.log(myh2);
+
+            let myp2 = document.querySelector('#myp')
+                console.log(myp2);
+
+            let myRedClass = document.querySelectorAll('.red')
+                console.log(myRedClass);
+
+        }
+
+    </script>
+    
+</body>
+</html>

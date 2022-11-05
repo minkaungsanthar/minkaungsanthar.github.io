@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> JS Image Action </title>
+
+</head>
+<body>
+    
+    <img src="../images/photo5.png" alt="" id="myimg" onmouseover="big()" onmouseout="normal()"
+    width="200px" height="150px">
+
+    <script>
+        function big() {
+
+            let myimg = document.getElementById('myimg')
+            myimg.setAttribute('width' , '400px')
+            myimg.setAttribute('height' , '300px')
+        }
+
+        function normal() {
+
+            let myimg = document.getElementById('myimg')
+            myimg.setAttribute('width' , '200px')
+            myimg.setAttribute('height' , '150px')
+    }
+
+        function changephoto(){
+                    let myimg = document.getElementById("myimg");  
+                    mysrc=myimg.getAttribute("src");
+                    alert(mysrc)
+                    if (mysrc == "../images/photo5.png") {
+                        myimg.setAttribute("src","../images/photo1.jpg")
+                    }
+    }
+
+    
+
+
+    </script>
+
+</body>
+</html>

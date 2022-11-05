@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Js Form Validation </title>
+
+</head>
+<body>
+
+    <h1> Js Form Validation </h1>
+
+    <Form action="register.php" method="get" onsubmit="return check()"> 
+
+        Name: <input type="text" name="name" id="name"> <br>
+        Password: <input type="password" name="password" id="password"> <br>
+        Comfirm Password: <input type="password" name="comfirlmpassword" id="comfirmpassword"> <br><br>
+        
+        <input type="submit" value="Register">
+    </Form>
+
+    <script>
+        function check() {
+
+            let name = document.getElementById('name').value ;
+            let passord = document.getElementById('password').value ;
+            let comfirlmpassword = document.getElementById('comfirmpassword').value ;
+
+            if(name.length < 3) {
+                alert('Name must be at least 3 characters ! ') ; 
+                return false;
+            }
+
+            if(password.length < 6 || comfirlmpassword.length < 6 ) {
+                alert('Password must be at least 6 characters !')
+                return false;
+            }
+            
+            if (password != comfirlmpassword) {
+                alert('Password and ComfirmPassword doesnot match!')
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Calculator </title>
+
+</head>
+<body>
+
+    <h1> Calculator </h1>
+
+    FirstNumber : <input type="number" id="firstNumber">    <br>
+    SecondNumber : <input type="number" id="secondNumber">  <br>
+
+    <button onclick="calculate()"> Calculate </button>
+
+    <p id="result"> </p>
+
+    <script>
+
+        function calculate() {
+
+            let firstNumber = parseInt (document.getElementById ("firstNumber").value)  ;
+            let secondNumber = parseInt (document.getElementById ("secondNumber").value)  ;
+
+            let sum = firstNumber + secondNumber ;
+            let sub = firstNumber - secondNumber ;
+            let mul = firstNumber * secondNumber ;
+            let div = firstNumber / secondNumber ;
+            let mod = firstNumber % secondNumber ;
+
+            let html = `Sum is ${sum}   <br>
+                        Sub is ${sub}   <br>
+                        Mul is ${mul}   <br>
+                        Div is ${div}   <br>
+                        Mod is ${mod}   <br> ` ;
+
+            document.getElementById ("result").innerHTML = html ;
+        }
+
+    </script>
+    
+</body>
+</html>
