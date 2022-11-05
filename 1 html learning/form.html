@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Form </title>
+
+</head>
+
+<body>
+
+    <h1> HTML Form Elements </h1>
+
+    <form action="login.php" method="get">
+        
+        <label for="email"> Email: </label> <input type="email" name="email" id="email"> <br>
+        <label for="password"> password: </label> <input type="password" name="password" id="password"> <br>
+        <input type="submit" value="Login">
+    </form> <hr>
+
+    <h1> Student Registration Form </h1>
+
+    <form action="register.php" method="get" enctype="multipart/form-data">
+
+        StuentID: <input type="text" name="studentid" id="studentid" readonly="readonly" value="123456"> <br>
+        StuentID: <input type="text" name="studentid" id="studentid" disabled="disabled" value="123456"> <br><br>
+
+        <fieldset>
+
+            <legend> Personal Information </legend>
+            <input type="hidden" name="id" value="100">
+            <label for="name"> Name: </label> 
+            <input type="text" name="name" id="name" required="required" minlength="6" maxlength="13" size="13"> <br>
+
+            <label for="address"> Address: </label>
+            <textarea name="address" id="address" cols="20" rows="3"></textarea> <br>
+        </fieldset>
+
+        <h4> Interests </h4>
+<!--multiple select-->
+        <label for="html"> HTML </label> 
+        <input type="checkbox" name="html" id="html">
+
+        <label for="css"> CSS </label> 
+        <input type="checkbox" name="css" id="css">
+
+        <label for="js"> Js </label> 
+        <input type="checkbox" name="js" id="js">
+
+        <h4> Gender </h4>
+<!--single select-->
+        <input type="radio" name="gender" id="male" value="male"> <label for="male"> Male </label>
+        <input type="radio" name="gender" id="female" value="female"> <label for="female"> Female </label> <br> 
+
+        <h4> Education </h4>
+<!-- -->
+        <select name="education" value="education" multiple="multiple">
+
+            <option value="0"> Education level </option>
+            <option value="1" selected="selected"> Highschool </option>
+            <option value="2"> University </option>
+            <option value="3"> Collage </option>
+        </select> <br><br>
+
+        <label for="poto"> Your Photo: </label>
+        <input type="file" name="photo" id="photo"> <br><br>
+
+        <label for="age"> Age: </label> 
+        <input type="number" name="age" id="age" min="18" max="30" step="5"> <br><br>
+
+        <label for="height"> Heigit: </label> 
+        <input type="number" name="height" id="height" min="5" max="8" step="0.2"> <br><br>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1mAgelsVrHs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/v3xwCkhmies" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <br><br>
+        <input type="reset" value="Clear">
+
+        <input type="submit" name="" id="" value="Register">
+    </form> <hr>
+
+</body>
+</html>
