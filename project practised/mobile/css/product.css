@@ -1,0 +1,191 @@
+
+
+/* Title Product */
+.title_product {
+    margin: 50px 0 30px 5%;
+    font-size: 22px;
+}
+
+/* Find Our More */
+.title_product a{
+    text-decoration: none;
+}
+.title_product a button {
+    float: right;
+    margin-right: 5%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+.title_product a button:hover {
+    background-color: #60b3c5;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* iPhone 14 */
+
+/* iPhone 14 Plus */
+.iphone14_plus {
+    display: flex;
+    margin:0 0 20px 30px;
+}
+.iphone14_plus_img a {
+    display: inline-block;
+    background-image: url(../images/iPhone/iphone14plus.png);
+    height: 280px;
+    width: 190px;
+}
+.price {
+    display: block;
+    margin-top: 20px;
+}
+.iphone14_plus_img a:hover {
+    background-image: url(../images/iPhone/iphone14plusblack.png);
+}
+.iphone14_plus p {
+    margin: 40px 0 0 25px;
+    line-height: 30px;
+}
+.iphone14_plus p span {
+    font-size: 16px;
+}
+
+
+/* iPhone 14 Series */
+.iphone14_series {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 40px 60px ;
+}
+.iphone14_series div {
+    text-align: center;
+}
+.iphone14_series div a img:hover {
+    border-bottom: solid 2px #60b3c5;
+    margin: 0 0 -2px 0;
+}
+
+
+/* Line */
+.line {
+    width: 80%;
+    margin-left: 5%;
+}
+
+
+/* Samsung */
+
+/* Samsung Fold */
+.samsung_fold {
+    display: flex;
+    margin:0 0 20px 30px;
+}
+.samsung_fold_img a {
+    display: inline-block;
+    background-image: url(../images/Samsung/samsungGalaxyZFoldWhite.png);
+    width: 280px;
+    height: 224px;
+}
+.samsung_fold_img a:hover {
+    background-image: url(../images/Samsung/samsungGalaxyZFoldBlack.png);
+}
+.samsung_fold p {
+    margin: 30px 0 0 25px;
+    line-height: 30px;
+}
+.samsung_fold p span {
+    font-size: 16px;
+}
+
+/*  */
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 60px;
+    margin: 70px;
+}
+.grid div {
+    text-align: center;
+}
+.grid div a img:hover {
+    width: 150px;
+    border-bottom: solid 3px #60b3c5; 
+    /* border-bottom-left-radius: 5px;  */
+    padding: 0 0 10px 0;
+    margin: -20px 0 -3px 0;
+    transition: 0.2s;
+}
+.grid div p {
+    margin-top: 5px;
+}
+
+
+/* Xiaomi */
+
+/* Mi Pad */
+.mi_pad a {
+    display: inline-block;
+    background-image: url(../images/XiaoMi/MiPad5.jpg);
+    width: 190px;
+    height: 252px;
+    margin-top: 10px;
+}
+.mi_pad a:hover {
+    background-image: url(../images/XiaoMi/MiPad5Pro.jpg);
+}
+
+
+/* Realmi */
+
+/* Realmi 10 */
+.realme_10 a {
+    display: inline-block;
+    background-image: url(../images/Realmi/realme-10.jpg);
+    width: 160px;
+    height: 212px;
+    margin-top: 40px;
+}
+.realme_10 a:hover {
+    background-image: url(../images/Realmi/realme-10-pro.jpg);
+}
+
+
+
+/* Oppo */
+
+/* Oppo A1 Pro */
+.img {
+    margin-top: 40px;
+}
+
+
+/* Huawei */
+
+/* Mate 50 */
+.huawei_mate50 a {
+    display: inline-block;
+    background-image: url(../images/Huawei/Mate50.jpg);
+    width: 160px;
+    height: 212px;
+    margin-top: 40px;
+}
+.huawei_mate50 a:hover {
+    background-image: url(../images/Huawei/Mate50e.jpg);
+}
+
+
+/* Sony */
+
+/* Xperia 1 and 5 */
+.xperia_1_5 a {
+    display: inline-block;
+    background-image: url(../images/Sony/xperia-1-iii.jpg);
+    width: 160px;
+    height: 212px;
+    margin-top: 40px;
+}
+.xperia_1_5 a:hover {
+    background-image: url(../images/Sony/xperia-5-iii.jpg);
+}

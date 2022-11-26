@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Navigation */
+.navbar {
+    padding: 30px;
+}
+.nav_brand {
+    display: inline-block;
+    margin-left: 40px;
+}
+.nav_brand a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #60b3c5;
+}
+.navbar ul {
+    float: right;
+    margin-top: 6px;
+}
+.navbar ul li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+.navbar ul li a:hover {
+    color: #60b3c5;
+    letter-spacing: 3px;
+    transition-duration: 0.7s;
+    text-decoration: underline #60b3c5;
+}  
+
+/* Noti Icon */
+.cart_noti {
+    position: relative;
+    bottom: 15px;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+    left: -5px;
+    border-radius: 50%;
+}
+
+
+/* Backgroung Image  */
+.BG_img {
+    width: 100%;
+}
+
+/* Container  */
+.container_text {
+    position: absolute;
+    top: 250px;
+    left: 100px;
+}
+.container_text div {
+    font-size: 28px;
+    font-weight: bold;
+}
+.container_text p {
+    margin: 20px 0;
+}
+
+
+/* Shop Button  */
+.shop_now {
+    text-decoration: none;
+}
+.shop_now button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+.shop_now button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+/* Category  */
+.category_title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.category {
+    margin-left: 300px;
+    margin-right: 300px;
+}
+.category .center a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+.category .center a:hover {
+    background-color: #60b3c5;
+    color: white;
+    border: 1px solid #60b3c5;
+}
+
+
+/* New Arrival */
+.title {
+    border-left: 4px solid #60b3c5;
+    margin: 100px 0 0 90px;
+    padding: 0 0 0 30px;
+}
+.new_arrival {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-row-gap: 40px;
+    text-align: center;
+    margin: 40px 90px;
+}
+.new_arrival div a img:hover {
+    width: 150px;
+    border-bottom: solid 3px #60b3c5;
+    transition: 0.3s;
+}
+.new_arrival div p {
+    margin-top: 5px;
+}
+
+
+/* Acessories */
+.grid_acessories {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    text-align: center;
+    margin: 30px 60px;
+}
+.grid_acessories div a img:hover {
+    border-left: solid 3px #60b3c5;
+    border-top: solid 3px #60b3c5;
+    border-right: solid 3px #60b3c5;
+    margin: 0 -3px -3px -3px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    /* transition: 0.5s; */
+}
+
+
+
+
+/* More item */
+.more_item {
+    float: right;
+    margin: 30px 80px 0 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+}
+.more_item a {
+    text-decoration: none;
+}
+.more_item:hover {
+    background-color: #60b3c5;
+    color: white;
+}
+
+
+/* Our Blog */
+.blog {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+    margin: 40px 70px 0 70px;
+}
+.blog div {
+    box-shadow: -5px 10px 10px 
+        rgba(176, 173, 173, 0.15);
+}
+.img_zoom {
+    width: 100%;
+    height: 200px;
+    display: inline-block;
+    overflow: hidden;
+}
+.blog_img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    transition-duration: 1s;
+}
+.blog_img:hover {
+    transform: scale(1.4);
+}
+small {
+    color: #60b3c5;
+    padding: 0 0 0 15px;
+}
+.read_more {
+    text-decoration: none;
+    color: #60b3c5;
+    display: inline-block;
+    padding: 5px 0 35px 15px;
+}
+.blog div h4 {
+    text-align: justify;
+    padding: 5px 15px 5px 15px;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+
+/* Support */
+.support {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 70px;
+    padding: 30px 5%;
+    background-color: rgb(235, 235, 235);
+}
+
+.support div p {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.support div p span {
+    font-weight: bold;
+    display: block;
+    font-size: 20px;
+}
+
+
+/* Footer */
+footer {
+    background-color: black;
+    padding-top: 30px;
+}
+
+footer center a {
+    display: inline-block;
+    text-decoration: none;
+    color: gray;
+    margin: 20px 15px;
+}
+
+footer center p {
+    color: gray;
+    padding: 17px;
+}

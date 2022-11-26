@@ -1,0 +1,10 @@
+.grid div a img:hover {
+    width: 140px;
+    height: 140px;
+    border-left: solid 2px red;
+    border-bottom: solid 2px red;
+    border-bottom-left-radius: 5px;
+    padding: 0 0 3px 5px;
+    transition: 0.5s;
+    margin: 0 0 -2px -2px;
+  }
