@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> KM Mobile / Product / iPhone </title>
+
+    <link rel="icon" href="../../images/icon.png">
+
+    <!-- .css -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/product.css">
+    <link rel="stylesheet" href="../../../../fontawesome/css/all.min.css">
+
+    <!-- .js -->
+    <script src="../../../../fontawesome/js/all.min.js"></script>
+
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav_brand">
+            <a href="../index.html"> KM Mobile </a>
+        </div>
+
+        <ul>
+            <li><a href="../../index.html"> Home </a></li>
+            <li><a href="../../index.html#product"> Products </a></li>
+            <li><a href="../service.html"> Service </a></li>
+            <li><a href="../blog.html"> Blog </a></li>
+            <li><a href="../about.html"> About </a></li>
+            <li><a href="../contact.html"> Contact </a></li>
+
+            <li><i class="fa-solid fa-heart fa-lg"></i> <span class="cart_noti">3</span> </li>
+            <li><i class="fa-solid fa-cart-shopping fa-lg"></i> <span class="cart_noti">5</span> </li>     
+        </ul> 
+    </nav>  <!-- End Nav -->
+
+<hr>
+        
+
+    <div class="title_product">
+        iPhone 13 |
+    </div>
+
+    <div class="iphone13">  
+        <div>
+            <img src="../../images/iPhone/iPhone13.jpg" id="iPhone">
+        </div> <br>
+        <div class="button">
+            <button onclick="bluedark()" class="button_bluedark">  </button>
+            <button onclick="black()" class="button_black">  </button>
+            <button onclick="bluelight()" class="button_bluelight">  </button>
+            <button onclick="pink()" class="button_pink">  </button>
+        </div>
+    </div>
+
+<script>
+    let iPhone13 = document.getElementById('iPhone');
+
+    function bluedark(){
+        iPhone.src='../../images/iPhone/iPhone13.jpg';
+    }
+    function black(){
+        iPhone.src='../../images/iPhone/iPhone13pro.jpg';
+    }
+    function bluelight(){
+        iPhone.src='../../images/iPhone/iPhone13promax.jpg';
+    }
+    function pink(){
+        iPhone.src='../../images/iPhone/iPhone13mini.jpg';
+    }
+</script>
+
+<style>
+    .iphone13{
+        margin: 50px 0 0px 5%;
+        text-align: center;
+    }
+    .button{
+        margin: 10px 60px;
+    }
+    .button_bluedark{
+        padding: 10px;
+        border-radius: 50%;
+        background-color:rgb(37, 150, 190);
+        border: none;
+    }
+    .button_black{
+        padding: 10px;
+        border-radius: 50%;
+        background-color: rgba(9,0,0,255);
+        border: none;
+    }
+    .button_bluelight{
+        padding: 10px;
+        border-radius: 50%;
+        background-color: rgba(167,188,209,255);
+        border: none;
+    }
+    .button_pink{
+        padding: 10px;
+        border-radius: 50%;
+        background-color: pink;
+        border: none;
+    }
+</style>
+
+
+</body>
+</html>

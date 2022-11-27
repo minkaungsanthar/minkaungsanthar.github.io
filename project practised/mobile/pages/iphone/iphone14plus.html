@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> KM Mobile / Product / iPhone </title>
+
+    <link rel="icon" href="../../images/icon.png">
+
+    <!-- .css -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/product.css">
+    <link rel="stylesheet" href="../../../../fontawesome/css/all.min.css">
+
+    <!-- .js -->
+    <script src="../../../../fontawesome/js/all.min.js"></script>
+
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav_brand">
+            <a href="../index.html"> KM Mobile </a>
+        </div>
+
+        <ul>
+            <li><a href="../../index.html"> Home </a></li>
+            <li><a href="../../index.html#product"> Products </a></li>
+            <li><a href="../service.html"> Service </a></li>
+            <li><a href="../blog.html"> Blog </a></li>
+            <li><a href="../about.html"> About </a></li>
+            <li><a href="../contact.html"> Contact </a></li>
+
+            <li><i class="fa-solid fa-heart fa-lg"></i> <span class="cart_noti">3</span> </li>
+            <li><i class="fa-solid fa-cart-shopping fa-lg"></i> <span class="cart_noti">5</span> </li>     
+        </ul> 
+    </nav>  <!-- End Nav -->
+
+<hr>
+        
+
+    <div class="title_product">
+        iPhone 14 Plus |
+    </div>
+
+    <div class="iphone14">  
+        <div>
+            <img src="../../images/iPhone/iPhone14.jpg" id="iPhone">
+        </div> <br>
+        <div class="button">
+            <button onclick="black()" class="button_black">  </button>
+            <button onclick="purple()" class="button_purple">  </button>
+        </div>
+    </div>
+
+<script>
+    let iPhone14 = document.getElementById('iPhone');
+
+    function black(){
+        iPhone.src='../../images/iPhone/iPhone14.jpg';
+    }
+    function purple(){
+        iPhone.src='../../images/iPhone/iPhone14plus.jpg';
+    }
+</script>
+
+<style>
+    .iphone14{
+        margin: 50px 0 0px 5%;
+        text-align: center;
+    }
+    .button{
+        margin: 10px 60px;
+    }
+    .button_black{
+        padding: 10px;
+        border-radius: 50%;
+        background-color: black;
+        border: none;
+    }
+    .button_purple{
+        padding: 10px;
+        border-radius: 50%;
+        background-color: rgb(215, 192, 238);
+        border: none;
+    }
+</style>
+
+
+</body>
+</html>

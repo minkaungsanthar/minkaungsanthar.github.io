@@ -33,7 +33,7 @@
 }
 .iphone14_plus_img a {
     display: inline-block;
-    background-image: url(../images/iPhone/iphone14plus.png);
+    background-image: url(../images/iPhone/iphone14plus1.png);
     height: 280px;
     width: 190px;
 }
@@ -42,7 +42,7 @@
     margin-top: 20px;
 }
 .iphone14_plus_img a:hover {
-    background-image: url(../images/iPhone/iphone14plusblack.png);
+    background-image: url(../images/iPhone/iphone14plus2.png);
 }
 .iphone14_plus p {
     margin: 40px 0 0 25px;
@@ -114,7 +114,7 @@
     border-bottom: solid 3px #60b3c5; 
     /* border-bottom-left-radius: 5px;  */
     padding: 0 0 10px 0;
-    margin: -20px 0 -3px 0;
+    margin: -20px 2px -3px 2px;
     transition: 0.2s;
 }
 .grid div p {
